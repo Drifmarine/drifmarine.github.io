@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+
+    
+
+    
+
+    <title>近期面试小结 | 深海小屋</title>
+    <meta name="author" content="Drifmarine">
+    <meta name="version" content="1.0.0">
+    <meta name="keywords" content>
+    <meta name="description" content="感觉最近在国内视频和电话面试一共进行了三次，这几次面试有一些自己没掌握熟练的基础知识点，在这里做个笔记，希望以后自己遇到这些问题的时候不要不会，也是对自己这几次面试的一个小结。第一次面试野指针：指向了没被释放的或者没有权限的内存虚函数：子类重写父类成员函数时，父类的函数需要加上virtual，这样子类就可以调用子类重写的函数了，否则会调用父类的函数。纯虚函数：没有被实现的虚函数，一般用于抽象概念上的父类。第二次面试内存泄漏：指的是申请内存后没有及时释放，导致该区内存不可使用，造成了空间...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <main class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <div class="nav-mobile">
+        <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
+        <h1 class="nav-mobile-title nav-mobile-item">深海小屋</h1>
+        <button id="open-menus" class="open-panel nav-mobile-item"><i class="icon-library"></i></button>
+    </div>
+
+    <nav id="nav-inner" class="nav-inner">
+        
+            <a class="nav-item" href="/">
+                <span class="nav-text">首页</span>
+            </a>
+        
+            <a class="nav-item" href="/tags">
+                <span class="nav-text">标签</span>
+            </a>
+        
+            <a class="nav-item" href="/archives">
+                <span class="nav-text">归档</span>
+            </a>
+        
+            <a class="nav-item" href="/about">
+                <span class="nav-text">关于</span>
+            </a>
+        
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="https://drifmarine.github.io"></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一次面试"><span class="toc-number">1.</span> <span class="toc-text">第一次面试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二次面试"><span class="toc-number">2.</span> <span class="toc-text">第二次面试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三次面试"><span class="toc-number">3.</span> <span class="toc-text">第三次面试</span></a></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            近期面试小结
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="https://drifmarine.github.io/2019/07/12/近期面试小结/index.html">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2019-07-12T13:50:29.000Z" itemprop="datePublished">2019-07-12</time>
+</a>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/C/">C++</a>, <a class="article-tag-link" href="/tags/Interview/">Interview</a>
+</div>
+
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <p>感觉最近在国内视频和电话面试一共进行了三次，这几次面试有一些自己没掌握熟练的基础知识点，在这里做个笔记，希望以后自己遇到这些问题的时候不要不会，也是对自己这几次面试的一个小结。</p>
+<h3 id="第一次面试"><a href="#第一次面试" class="headerlink" title="第一次面试"></a>第一次面试</h3><p>野指针：指向了没被释放的或者没有权限的内存<br>虚函数：子类重写父类成员函数时，父类的函数需要加上virtual，这样子类就可以调用子类重写的函数了，否则会调用父类的函数。<br>纯虚函数：没有被实现的虚函数，一般用于抽象概念上的父类。</p>
+<h3 id="第二次面试"><a href="#第二次面试" class="headerlink" title="第二次面试"></a>第二次面试</h3><p>内存泄漏：指的是申请内存后没有及时释放，导致该区内存不可使用，造成了空间的浪费。<br>内存越界：IndexOutOfBoundException（虽然可能不会报错）。出现了内存越界的话会导致数据被意外修改，发生严重的错误。</p>
+<h3 id="第三次面试"><a href="#第三次面试" class="headerlink" title="第三次面试"></a>第三次面试</h3><p>进程与线程：东西比较多，还是直接去牛客的面经看吧（<br>线程池：不太好解释，我还是先看看吧。<br>子类构建和析构时的顺序：构建：父-&gt;子，析构：子-&gt;父。<br>设计模式：单例，工厂模式，建造者模式等。单例就是每个类只会创建一个实例。工厂涉及了多态，就像一个工厂会造车，有轿车，卡车，SUV等不同的车，每种车都是父类Car的子类这种感觉。建造者模式就是把每个成员都看成是部件组成一个类，然后用这些类去组合成一个大类。</p>
+<p>以后这个页面也会更新吧，直到我找到工作为止。</p>
+<p>(Updated on 19/7/12)</p>
+
+        
+    </section>
+</article>
+
+
+
+<div class="comments">
+    <div id="comments"></div>
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+    new Gitalk({
+        clientID: "6d1f0be9b228d7b7cc3a",
+        clientSecret: "cba711fbd3b124f6223a983789a17e02e9502fdb",
+        repo: "drifmarine.github.io",
+        owner: "drifmarine",
+        admin: ["drifmarine"],
+        id: "2019/07/12/近期面试小结",
+        distractionFreeMode: true,
+        title: "近期面试小结",
+        body: "https://drifmarine.github.io/2019/07/12/近期面试小结/",
+        labels: ["Interview","C++"]
+    }).render('comments');
+    </script>
+</div>
+
+</div>
+        <footer class="footer">
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme by <a href="https://github.com/sanonz/hexo-theme-concise" target="_blank">Concise</a>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?931d32119c60f32b334d7517d069e3e5";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
+</footer>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var nodes = {
+            nav: $('#nav'),
+            aside: $('#aside'),
+            asideInner: $('#aside-inner'),
+            navInner: $('#nav-inner')
+        };
+
+        var doing = false;
+        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
+            if (nodes.aside.hasClass('mobile-open')) {
+                nodes.aside.removeClass('mobile-open');
+            } else {
+                nodes.aside.removeClass('mobile-close panel-show');
+            }
+            doing = false;
+        });
+        $('#open-panel, #aside-mask').on('click', function() {
+            if (doing) {
+                return;
+            }
+            
+            if (nodes.aside.hasClass('panel-show')) {
+                nodes.aside.addClass('mobile-close');
+            } else {
+                nodes.aside.addClass('mobile-open panel-show');
+            }
+        });
+        $('#open-menus').on('click', function() {
+            nodes.navInner.slideToggle();
+        });
+
+        if (window.innerWidth <= 960) {
+            setTimeout(function() {
+                nodes.navInner.slideUp();
+            }, 3000);
+        }
+    });
+    </script>
+    
+        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+        <script type="text/javascript">
+        $(document.body).scrollspy({target: '#aside-inner'});
+        </script>
+    
+
+</body>
+</html>
